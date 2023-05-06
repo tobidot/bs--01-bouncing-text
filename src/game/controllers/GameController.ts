@@ -22,6 +22,16 @@ export class GameController implements Controller {
     }
     
     public update(delta_seconds: number): ControllerResponse {
+        this.model.update(delta_seconds);
         return null;
+    }
+    
+    public onKeyDown(event: KeyboardEvent) {
+    }
+
+    public onKeyUp(event: KeyboardEvent) {
+        if (event.key == "d") {
+            this.model.debug = !this.model.debug;
+        }
     }
 }
