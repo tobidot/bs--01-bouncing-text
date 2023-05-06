@@ -30,7 +30,7 @@ export class GameView implements View {
         this.context.fillStyle = "#000";
         this.context.fillRect(0, 0, 800, 600);
         this.context.fillStyle = "#fff";
-        this.context.font = "64px monospace";
+        this.context.font = "46px monospace";
         this.context.textAlign = "center";
         this.context.textBaseline = "middle";
         this.context.imageSmoothingEnabled = false;
